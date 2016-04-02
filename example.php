@@ -2,7 +2,7 @@
 
 require 'CloudMailRu.php';
 
-$cloud = new CloudMailRu('user','pass');
+$cloud = new CloudMailRu('user', 'mail.ru', 'pass');
 
 if ($cloud->login()) {
     
