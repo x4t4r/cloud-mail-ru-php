@@ -7,7 +7,7 @@
 class CloudMailRu
 {
 
-    function __construct($user, $pass)
+    function __construct($user, $domain, $pass)
     {
 
         $this->user = $user;
@@ -18,7 +18,7 @@ class CloudMailRu
         $this->build = '';
         $this->upload_url = '';
         $this->ch = '';
-        $this->domain = 'bk.ru';
+        $this->domain = $domain;
     }
     
     function __destruct()
